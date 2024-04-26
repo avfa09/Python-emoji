@@ -1,0 +1,18 @@
+#My first emojize code 
+
+
+import emoji
+while True:
+  gelen = input("Input: ")
+  try:
+   output = emoji.emojize(gelen,language='alias')
+   break
+  except:
+     try:
+         if ":" in gelen:
+             output = emoji.emojize(gelen,language='alias')
+             break
+     except:
+        break
+
+print("Output:",output)
